@@ -25,10 +25,10 @@ int random(){
      int i,j,t,c,sft=0,diceres,pos1,pos2;
      if(currentpos==100){
          printf("*******congratulations *******\n\n\n player %s wins\n",player);
-         scanf("%s");
+         scanf("*%s");
          exit(0);
      }
-     for(i=10;i>0;i++){
+     for(i=10;i>0;i--){
          t=i-1;
          if((sft%2)==0){
              c=0;
@@ -74,7 +74,7 @@ int random(){
          printf("1. Player 1 plays\n");
          printf("2. Player 2 plays\n");
          printf("3.Exit\n");
-         scanf("%s",ch);
+         scanf("%s",&ch);
 
          switch(ch)
          {
@@ -97,30 +97,26 @@ int random(){
                              Displaychart(40,"$P1$");//there is a snake
 
                          }
-                         if(current_pos1==65)
-                         {
-                             Displaychart(40,"$P1$");//there is a snake
-
-                         }
+                         
                          if(current_pos1==25)
                          {
                              Displaychart(9,"$P1$");//there is a snake
 
                          }
-                         if(current_pos1==13)
-                         {
-                             Displaychart(42,"$P1$");// there is a Ladder
-
-
-                         }
                          if(current_pos1==70)
                          {
-                             Displaychart(93,"$P1$");//there is a Ladder
+                             Displaychart(93,"$P1$");// there is a Ladder
+
 
                          }
                          if(current_pos1==60)
                          {
-                             Displaychart(83,"$P1$"); //there is a ladder
+                             Displaychart(83,"$P1$");//there is a Ladder
+
+                         }
+                         if(current_pos1==13)
+                         {
+                             Displaychart(42,"$P1$"); //there is a ladder
                          }
                          else{
                              Displaychart(current_pos1,"$P1$");
@@ -157,14 +153,14 @@ int random(){
                       {
                           Displaychart(93,"$P2$");
                       }
-                      if(current_pos2==13)//there is ladder
-                      {
-                          Displaychart(42,"$P2$");
-                          
-                      }
                       if(current_pos2==60)//there is ladder
                       {
                           Displaychart(83,"$P2$");
+                          
+                      }
+                      if(current_pos2==13)//there is ladder
+                      {
+                          Displaychart(42,"$P2$");
                       }
                       else{
                           Displaychart(current_pos2,"$P2$");
@@ -176,9 +172,8 @@ int random(){
                       Displaychart(current_pos2,"$P2$");
                   } 
                   printf("Player 1 position is %d]\n",current_pos1);
-                break;
-            case '3':
-               exit(0);
+             break;
+            case '3': exit(0);
                break;
             default:
                 printf("Incorrect choice. Try Again\n");             
