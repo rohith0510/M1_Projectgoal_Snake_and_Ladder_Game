@@ -1,9 +1,7 @@
 
 Features
-     
-     Strength
-         
-      Player position is represented on board and update for every move.
+
+     Player position is represented on board and update for every move.
 
       Ladders and Snake trapes are arranged among the board.
 
@@ -15,7 +13,7 @@ Features
 
  Research/State of art:
 
-            .In this Designing and implementing of Snake and Ladder using basic programming.
+            In this Designing and implementing of Snake and Ladder using basic programming.
 
 
 4W'S and 1-H
@@ -43,15 +41,12 @@ Features
            
               At some point, game will be boring as most of the moves are based on probability.
            
-             
-        Oppurtunities
+         Oppurtunities
 -            It improves decision making ability of the player as the game contains opportunities and traps at the same time.
          
          Threats
-         
-           As it is an old game most of people are not showing interest to play the game.
-
-           Due to modern technology most of games are advanced and heavy competition to normal board games.
+              As it is an old game most of people are not showing interest to play the game.
+              Due to modern technology most of games are advanced and heavy competition to normal board games.
 
            
 
