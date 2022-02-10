@@ -1,13 +1,15 @@
 
 Features
      
-     .Player position is represented on board and update for every move.
+     Strength
+         
+      Player position is represented on board and update for every move.
 
-     .Ladders and Snake trapes are arranged among the board.
+      Ladders and Snake trapes are arranged among the board.
 
-     .Multi players can be played.
+      A random Dice number will be generated in the range of 1-6.
 
-     It will generates the random dice number from (1 to 6).
+      It will generates the random dice number from (1 to 6).
 
 
 
@@ -31,17 +33,29 @@ Features
 
  SWOT Analysis:
 
+        Strength
+
+              Multiple players can be played at a time.
+
+              This game is more challenging due to snake traps and ladder opportunity
+            
+        Weakness
+           
+              At some point, game will be boring as most of the moves are based on probability.
+           
+             
+        Oppurtunities
+-            It improves decision making ability of the player as the game contains opportunities and traps at the same time.
+         
+         Threats
+         
            As it is an old game most of people are not showing interest to play the game.
 
            Due to modern technology most of games are advanced and heavy competition to normal board games.
 
-           At some point, game will be boring as most of the moves are based on probability.
-           Opportunities.
+           
 
-           Multiple players can be played at a time.
-
-           This game is more challenging due to snake traps and ladder opportunity
-           Weakness.
+           
 
   
   High level Requirements:
