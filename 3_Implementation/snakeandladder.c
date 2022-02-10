@@ -8,8 +8,7 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include<stdio.h>
-#include<stdlib.h>
+
 int random()
 {
     int rem;
@@ -272,7 +271,8 @@ void main()
                              
                          }
                          if(current_pos1==28)
-                         {
+             #include<stdio.h>
+#include<stdlib.h>            {
                              displaychart(84,"$P2$");//there is ladder
                              
                          }
