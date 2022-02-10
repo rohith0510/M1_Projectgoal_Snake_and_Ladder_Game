@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2022
  * 
  */
-
 #include<stdio.h>
 #include<stdlib.h>
-int random(){
+int random()
+{
     int rem;
     R:rem=rand()%7;
     if (rem==0)
@@ -20,21 +20,27 @@ int random(){
        return rem;
 
 }
- void Displaychart(int currentpos,char player[4])
- {
-     int i,j,t,c,sft=0,diceres,pos1,pos2;
-     if(currentpos==100){
-         printf("*******congratulations *******\n\n\n player %s wins\n",player);
-         scanf("*%s");
-         exit(0);
-     }
-     for(i=10;i>0;i--){
+void displaychart(int currentpos,char player[4])
+{
+    int i,j,t,c,sft=0,diceres,pos1,pos2;
+    
+	    if(currentpos==100)
+		{
+		    printf("*******congratulations *******\n\n\n player %s wins\n",player);
+            scanf("*%s");
+            exit(0);
+		}
+    for(i=10;i>0;i--)
+	{
          t=i-1;
-         if((sft%2)==0){
+         if((sft%2)==0)
+		 {
              c=0;
-             for(j=10;j>=1;j--){
+             for(j=10;j>=1;j--)
+			 {
                  diceres=(i*j)+(t*c++);
-                 if(currentpos==diceres){
+                 if(currentpos==diceres)
+				 {
                      printf("%s\t",player);
                  }
                  else
@@ -57,19 +63,30 @@ int random(){
     
              }
              printf("\n\n");
-         }
+    }
 
     printf("---------------------------------------------\n");
     
-     }
+}
  
- void main(){
+void main()
+{
 
      int i,dice,current_pos1=0,current_pos2=0;
      char ch;
-     while(1){
+     while(1)
+	 {
          printf("        ***  SNAKE AND LADDER GAME  ***\n \t \tCoded By rohith\n");
-         printf("Snakes: -25 t0 9,\t 65 t0 40,\t 99 t0 1.\nLadder:- 13 t0 42,\t 60 t0 83,\t 70 to 93.\n");
+         printf("Snake 99 to 78      ladder 71 to 91\n");
+         printf("Snake 96 to 75      ladder 63 to 81\n");
+         printf("Snake 93 to 73      ladder 28 to 84\n");
+         printf("Snake 87 to 24      ladder 51 to 67\n");
+         printf("Snake 59 to 37      ladder 40 to 59\n");
+         printf("Snake 62 to 19      ladder 20 to 38\n");
+         printf("Snake 64 to 60      ladder 09 to 31\n");
+         printf("Snake 54 to 34      ladder 04 to 14\n");
+         printf("Snake 17 to 07      ladder 02 to 36\n");
+         printf("The player who reach 100 first will be winner\n");
          printf("choose your option\n");
          printf("1. Player 1 plays\n");
          printf("2. Player 2 plays\n");
@@ -89,90 +106,217 @@ int random(){
                     {
                          if(current_pos1==99)
                          {
-                             Displaychart(1,"$P1$");//there is a snake
+                             displaychart(78,"$P1$");//there is a snake
 
                          }
-                         if(current_pos1==65)
+                         if(current_pos1==96)
                          {
-                             Displaychart(40,"$P1$");//there is a snake
+                             displaychart(75,"$P1$");//there is a snake
 
                          }
                          
-                         if(current_pos1==25)
+                         if(current_pos1==93)
                          {
-                             Displaychart(9,"$P1$");//there is a snake
+                             displaychart(73,"$P1$");//there is a snake
 
                          }
-                         if(current_pos1==70)
+                         if(current_pos1==87)
                          {
-                             Displaychart(93,"$P1$");// there is a Ladder
+                             displaychart(24,"$P1$");//there is a snake
 
 
                          }
-                         if(current_pos1==60)
+                         if(current_pos1==59)
                          {
-                             Displaychart(83,"$P1$");//there is a Ladder
+                             displaychart(37,"$P1$");//there is a snake
 
                          }
-                         if(current_pos1==13)
+                         if(current_pos1==62)
                          {
-                             Displaychart(42,"$P1$"); //there is a ladder
+                             displaychart(19,"$P1$");//there is a snake
+                             
+                         }
+                         if(current_pos1==64)
+                         {
+                             displaychart(60,"$P1$");//there is a snake
+                             
+                         }
+                         if(current_pos1==54)
+                         {
+                             displaychart(34,"$P1$");//there is a snake
+                             
+                         }
+                         if(current_pos1==17)
+                         {
+                             displaychart(07,"$P1$");//there is a snake
+                             
+                         }
+                         if(current_pos1==71)
+                         {
+                             displaychart(91,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==63)
+                         {
+                             displaychart(81,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==28)
+                         {
+                             displaychart(84,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==51)
+                         {
+                             displaychart(67,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==40)
+                         {
+                             displaychart(59,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==20)
+                         {
+                             displaychart(38,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1== 9)
+                         {
+                             displaychart(31,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==04)
+                         {
+                             displaychart(14,"$P1$");//there is ladder
+                             
+                         }
+                         if(current_pos1==02)
+                         {
+                             displaychart(36,"$P1$");//there is ladder
+                             
                          }
                          else{
-                             Displaychart(current_pos1,"$P1$");
+                             displaychart(current_pos1,"$P1$");
                          }
 
                     }
                     else{
-                        current_pos1-dice;
+                        current_pos1=current_pos1-dice;
                         printf("Range  exceeded of palyer 1.\n");
-                        Displaychart(current_pos1,"$P1$");
+                        displaychart(current_pos1,"$P1$");
                     }
                     printf("Player 2 position is%d\n",current_pos2);
 
-                    break;
+                break;
             case '2':dice=random();
             system("cls");
                   printf("\t\t\tdice=%d\n\n",dice);
                   current_pos2=dice+current_pos2;
                   if(current_pos2<101){
-                      if(current_pos2==99)
-                      {
-                          Displaychart(1,"$P2$");
-                      }
-                      if(current_pos2==65) //there is a snake
-                      {
-                          Displaychart(40,"$P2$");
-                      }
-                      if(current_pos2==25)//there is a snake
-                      {
-                          Displaychart(9,"$P2$");
+                      if(current_pos1==99)
+                         {
+                             displaychart(78,"$P2$");//there is a snake
 
-                      }
-                      if(current_pos2==70)//there is ladder
-                      {
-                          Displaychart(93,"$P2$");
-                      }
-                      if(current_pos2==60)//there is ladder
-                      {
-                          Displaychart(83,"$P2$");
-                          
-                      }
-                      if(current_pos2==13)//there is ladder
-                      {
-                          Displaychart(42,"$P2$");
-                      }
+                         }
+                         if(current_pos1==96)
+                         {
+                             displaychart(75,"$P2$");//there is a snake
+
+                         }
+                         
+                         if(current_pos1==93)
+                         {
+                             displaychart(73,"$P2$");//there is a snake
+
+                         }
+                         if(current_pos1==87)
+                         {
+                             displaychart(24,"$P2$");//there is a snake
+
+
+                         }
+                         if(current_pos1==59)
+                         {
+                             displaychart(37,"$P2$");//there is a snake
+
+                         }
+                         if(current_pos1==62)
+                         {
+                             displaychart(19,"$P2$");//there is a snake
+                             
+                         }
+                         if(current_pos1==64)
+                         {
+                             displaychart(60,"$P2$");//there is a snake
+                             
+                         }
+                         if(current_pos1==54)
+                         {
+                             displaychart(34,"$P2$");//there is a snake
+                             
+                         }
+                         if(current_pos1==17)
+                         {
+                             displaychart(07,"$P2$");//there is a snake
+                             
+                         }
+                         if(current_pos1==71)
+                         {
+                             displaychart(91,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==63)
+                         {
+                             displaychart(81,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==28)
+                         {
+                             displaychart(84,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==51)
+                         {
+                             displaychart(67,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==40)
+                         {
+                             displaychart(59,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==20)
+                         {
+                             displaychart(38,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==9)
+                         {
+                             displaychart(31,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==04)
+                         {
+                             displaychart(14,"$P2$");//there is ladder
+                             
+                         }
+                         if(current_pos1==02)
+                         {
+                             displaychart(36,"$P2$");//there is ladder
+                             
+                         }
                       else{
-                          Displaychart(current_pos2,"$P2$");
+                          displaychart(current_pos2,"$P2$");
                       }
                   }  
                   else{
                       current_pos2=current_pos2-dice;
                       printf("Range exceeded of Player 2. \n");
-                      Displaychart(current_pos2,"$P2$");
+                      displaychart(current_pos2,"$P2$");
                   } 
                   printf("Player 1 position is %d]\n",current_pos1);
-             break;
+                break;
             case '3': exit(0);
                break;
             default:
@@ -181,3 +325,4 @@ int random(){
         }
      }
  }
+ 
