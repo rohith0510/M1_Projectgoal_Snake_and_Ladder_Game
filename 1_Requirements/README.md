@@ -38,13 +38,10 @@ Features
               This game is more challenging due to snake traps and ladder opportunity
             
         Weakness
-           
               At some point, game will be boring as most of the moves are based on probability.
-           
-         Oppurtunities
--            It improves decision making ability of the player as the game contains opportunities and traps at the same time.
-         
-         Threats
+        Oppurtunities
+              It improves decision making ability of the player as the game contains opportunities and traps at the same time.
+        Threats
               As it is an old game most of people are not showing interest to play the game.
               Due to modern technology most of games are advanced and heavy competition to normal board games.
 
