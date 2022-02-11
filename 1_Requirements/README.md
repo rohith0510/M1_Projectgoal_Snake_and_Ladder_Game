@@ -24,7 +24,7 @@
 
      *  where-each player picks a piece each player rolls the die .
 
-     *  when-if you get stressed in anywork play this game
+     *  when-if you get stressed in anywork play this game.
 
      *  How-throw the dice and whatever number you get ,move on the number cells on the board.
 
