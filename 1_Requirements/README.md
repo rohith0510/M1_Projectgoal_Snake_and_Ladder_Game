@@ -16,18 +16,13 @@
     *  In this Designing and implementing of Snake and Ladder using basic programming.
 
 
-* 4W'S and 1-H
+* 2W'S and 1-H
 
-     *  What-snake and ladder game allows students to understand the concept of the mathematics easily.
-
-     *  why-playing sankes and ladder help children to recognise the numbers they hear and talk about in everyday life. 
-
-     *  where-each player picks a piece each player rolls the die .
-
-     *  when-if you get stressed in anywork play this game.
-
-     *  How-throw the dice and whatever number you get ,move on the number cells on the board.
-
+  * What-  What number did player land on? / What number comes next?
+   
+  * Which- Which way do player has to go next?    
+   
+  * How-   How many more do player need to win? 
 
 * SWOT Analysis:
 
