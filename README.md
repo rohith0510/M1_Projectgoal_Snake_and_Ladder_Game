@@ -9,3 +9,7 @@ Only the location of current player is shown on the board, the location of other
  ![code quality](https://api.codiga.io/project/31115/score/svg)
  
  ![code grade](https://api.codiga.io/project/31115/status/svg)
+
+<a href="https://app.codiga.io/public/user/github/rohith0510">
+   <img src="https://api.codiga.io/public/badge/user/github/rohith0510?style=light" alt="codiga badge" />
+</a>
