@@ -13,3 +13,5 @@ Only the location of current player is shown on the board, the location of other
 <a href="https://app.codiga.io/public/user/github/rohith0510">
    <img src="https://api.codiga.io/public/badge/user/github/rohith0510?style=light" alt="codiga badge" />
 </a>
+
+![Screenshot (1464)](https://user-images.githubusercontent.com/63388606/153586218-b0105ff5-990e-40a7-950a-f10f139ce1cc.png)
